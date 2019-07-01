@@ -15,6 +15,7 @@ void swap(int *p, int *q){
 
 int quick_select(int A[], int n, int k){
   int i, j, pivot;
+    
 
 // 真ん中の要素をピボットとする
   pivot = A[n/2];
@@ -40,6 +41,8 @@ int main(){
   for(i=2;i<N;i++){
     A[i] = (long long int) A[i-1] * A[1] % N;
   }
+
+
   for(i=0;i<N;i++){
     if(quick_select(A, N, i) != i) printf("ERROR %d %d\n", i, quick_select(A, N, i));
 //    printf("%d th element is %d\n", i, quick_select(A, N, i));

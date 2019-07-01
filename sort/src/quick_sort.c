@@ -34,8 +34,10 @@ void quick_sort(int A[], int n){
     quick_sort(B[n-j-1], n-j);
     quick_sort(A[j-1], j);
     
+    
 
 }
+/*何にも分からん*/
 
 int main(){
   int i;
